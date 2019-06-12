@@ -1,2 +1,2 @@
-# discordmeBump
-A Node.js tool that makes it easier bump your servers on discord.me
+# disboardBump
+Bump your servers on Disboard automatically!

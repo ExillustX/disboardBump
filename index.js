@@ -5,14 +5,16 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log('disboardBump bot started...');
-  bump();
+  client.user.setActivity(process.env.SET_ACTIVITY);
+  function bump() {
+    console.log('Bumped!')
+    client.channels.get(process.env.CHANNEL).send('!disboard bump');
+  };
+  bump()
   setInterval(function() {
     bump();
   }, process.env.INTERVAL);
 });
 
-function bump() {
-    client.channels.get(process.env.CHANNEL).send('!disboard bump');
-};
 
 client.login(process.env.TOKEN);

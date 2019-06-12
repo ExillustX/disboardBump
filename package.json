@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ExillustX/disboardBump/issues"
   },
-  "homepage": "https://github.com/ExillustX/disboardBump#readme"
+  "homepage": "https://github.com/ExillustX/disboardBump#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  }
 }

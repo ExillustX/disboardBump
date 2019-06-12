@@ -1,0 +1,19 @@
+{
+  "name": "disboardbump",
+  "version": "1.0.0",
+  "description": "Bump your servers on Disboard automatically!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExillustX/disboardBump.git"
+  },
+  "author": "ExillustX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ExillustX/disboardBump/issues"
+  },
+  "homepage": "https://github.com/ExillustX/disboardBump#readme"
+}

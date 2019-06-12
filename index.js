@@ -9,7 +9,6 @@ client.on('ready', () => {
     console.log('Bumped!')
     client.channels.get(process.env.CHANNEL).send('!disboard bump');
   };
-  bump()
   setInterval(function() {
     bump();
   }, process.env.INTERVAL);

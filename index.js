@@ -15,4 +15,9 @@ client.on('ready', () => {
 });
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN).then(() => {
+  console.log('Discord login succeed!')
+})
+ .catch((e) => {
+  console.error(e);
+ });

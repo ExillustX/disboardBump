@@ -6,8 +6,11 @@ client.on('ready', () => {
   console.log('disboardBump bot started...');
   client.user.setActivity(process.env.SET_ACTIVITY);
   function bump() {
-    console.log('Bumped!')
-    client.channels.get(process.env.CHANNEL).send('!disboard bump');
+    client.channels.get(process.env.CHANNEL).send('!disboard bump').then(() => {
+      console.log('Bumped!')
+    }).catch((e) => {
+      console.error(e);
+    });
   };
   setInterval(function() {
     bump();
